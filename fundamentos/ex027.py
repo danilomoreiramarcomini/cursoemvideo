@@ -1,0 +1,5 @@
+complete_name = str(input("Complete name: ")).title()
+complete_name_list = complete_name.split()
+print(f"{complete_name}")
+print(f"{complete_name_list[0]}")
+print(f"{complete_name_list[-1]}")
