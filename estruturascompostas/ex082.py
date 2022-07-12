@@ -1,20 +1,19 @@
-listPython = list()
-listEvens = list()
-listOdds = list()
+list_python = list()
+list_evens = list()
+list_odds = list()
 
 while True:
-    numberInput = int(input('Enter with a number:'))
-    listPython.append(numberInput)
-    choiceInput = int(input('Want continue [1 Yes or 2 No]:'))
-    if choiceInput != 1:
+    number_input = int(input("Enter with a number: "))
+    list_python.append(number_input)
+    choice_input = int(input("Want continue [1 Yes or 2 No]: "))
+    if choice_input != 1:
         break
 
-for item in range(0, len(listPython)):
-    if listPython[item] % 2 == 0:
-        listEvens.append(listPython[item])
+for item in range(0, len(list_python)):
+    if list_python[item] % 2 == 0:
+        list_evens.append(list_python[item])
 
     else:
-        listOdds.append(listPython[item])
+        list_odds.append(list_python[item])
 
-
-print(f'Numbers wrote:{listPython}\nNumbers Odds:{listOdds}\nNumbers Evens:{listEvens}')
+print(f"Numbers wrote:{list_python}\nNumbers Odds:{list_odds}\nNumbers Evens:{list_evens}")

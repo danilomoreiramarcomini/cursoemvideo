@@ -15,13 +15,13 @@ def factorial(parameter_factorial, show=False):
     if show:
         for number in range(parameter_factorial, 0, -1):
             support *= number
-            print(number, end=' ')
+            print(number, end=" ")
             if number > 1:
-                print('*', end=' ')
+                print("*", end=" ")
             else:
-                print('=', end=' ')
+                print("=", end=" ")
         print(support)
 
 
-factorial_input = int(input('Factorial:'))
+factorial_input = int(input("Factorial: "))
 factorial(factorial_input, True)

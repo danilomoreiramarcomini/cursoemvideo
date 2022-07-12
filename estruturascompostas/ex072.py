@@ -2,7 +2,7 @@ numbers = ("one",  "two", "three", "four", "five", "six", "seven", "eight", "nin
            "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty")
 
 while True:
-    numberInput = int(input("Write a number between 1 and 20: "))
-    if 0 < numberInput <= 20:
-        print(numbers[numberInput - 1])
+    number_input = int(input("Write a number between 1 and 20: "))
+    if 0 < number_input <= 20:
+        print(numbers[number_input - 1])
         break

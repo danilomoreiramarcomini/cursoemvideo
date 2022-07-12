@@ -1,9 +1,9 @@
 import random
 
-tupleEmpty = (random.randint(1, 9), random.randint(1, 9), random.randint(1, 9), random.randint(1, 9),
-              random.randint(1, 9))
-print(f'The biggest number is: {max(tupleEmpty)}\nThe smallest number is:{min(tupleEmpty)}')
-for iteration in tupleEmpty:
+tuple_empty = (random.randint(1, 9), random.randint(1, 9), random.randint(1, 9), random.randint(1, 9),
+               random.randint(1, 9))
+print(f"The biggest number is: {max(tuple_empty)}\nThe smallest number is: {min(tuple_empty)}")
+for iteration in tuple_empty:
     print(iteration)
 
 

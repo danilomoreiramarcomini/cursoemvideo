@@ -3,12 +3,12 @@ def my_number():
     :return: A message of erro and a new input, or the number typed
     """
     while True:
-        number_str = str(input('Number:'))
+        number_str = str(input("Number: "))
         if number_str.isnumeric():
-            print(f'Your typed {number_str}')
+            print(f"Your typed {number_str}")
             break
         else:
-            print('\033[31mError\033[38m')
+            print("\033[31mError\033[38m")
 
 
 my_number()

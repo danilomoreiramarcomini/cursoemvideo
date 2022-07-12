@@ -1,22 +1,22 @@
-listPeople = list()
-listWeight = list()
-listName = list()
+list_people = list()
+list_weight = list()
+list_name = list()
 
 while True:
-    listPeople.append(str(input('Name:').title()))
-    listPeople.append(float(input('Weight:')))
-    choiceInput = int(input('Want continue? 1 yes or 2 No:'))
-    if choiceInput != 1:
+    list_people.append(str(input("Name: ").title()))
+    list_people.append(float(input("Weight: ")))
+    choice_input = int(input("Want continue? 1 yes or 2 No: "))
+    if choice_input != 1:
         break
 
-for people in range(1, len(listPeople), 2):
-    listWeight.append(listPeople[people])
-for people in range(0, len(listPeople), 2):
-    listName.append(listPeople[people])
-print(f'{len(listName)} People registered')
+for people in range(1, len(list_people), 2):
+    list_weight.append(list_people[people])
+for people in range(0, len(list_people), 2):
+    list_name.append(list_people[people])
+print(f"{len(list_name)} People registered")
 
-weightMax = max(listWeight)
-weightMin = min(listWeight)
+weight_max = max(list_weight)
+weight_min = min(list_weight)
 
-print(f'{listName[listWeight.index(weightMax)]} has {weightMax}')
-print(f'{listName[listWeight.index(weightMin)]} has {weightMin}')
+print(f"{list_name[list_weight.index(weight_max)]} has {weight_max}")
+print(f"{list_name[list_weight.index(weight_min)]} has {weight_min}")

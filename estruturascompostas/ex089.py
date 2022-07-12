@@ -1,29 +1,29 @@
-listAverage = list()
-listNotes = list()
-listNames = list()
-listSupportNotes = list()
+list_average = list()
+list_notes = list()
+list_names = list()
+list_support_notes = list()
 
 while True:
-    listNames.append(str(input('Enter with name of student:').title()))
-    listSupportNotes.append(float(input('Enter with the first note:')))
-    listSupportNotes.append(float(input('Enter with the second note:')))
-    listAverage.append((listSupportNotes[0] + listSupportNotes[1]) / 2)
-    choiceInput = int(input('Do you want continue? 1 Yes or 2 No:'))
+    list_names.append(str(input("Enter with name of student: ").title()))
+    list_support_notes.append(float(input("Enter with the first note: ")))
+    list_support_notes.append(float(input("Enter with the second note: ")))
+    list_average.append((list_support_notes[0] + list_support_notes[1]) / 2)
+    choiceInput = int(input("Do you want continue? 1 Yes or 2 No: "))
 
-    copyNo = listSupportNotes.copy()
-    listNotes.append(copyNo)
-    listSupportNotes.clear()
+    copyNo = list_support_notes.copy()
+    list_notes.append(copyNo)
+    list_support_notes.clear()
     if choiceInput != 1:
         break
 
-print(f'{"Nº.":<5}{"NAME":<10}"{"AVERAGE":>8}')
-print('-' * 30)
-for element in range(0, (len(listNames))):
-    print(f'{element:<5}   {listNames[element]:<10}  {listAverage[element]:>8}')
+print(f"{'Nº.':<5}{'NAME':<10}'{'AVERAGE':>8}")
+print("-" * 30)
+for element in range(0, (len(list_names))):
+    print(f"{element:<5}   {list_names[element]:<10}  {list_average[element]:>8}")
 
 while True:
-    showNoteInput = int(input('Show notes of student? [999 - quit]: '))
-    if showNoteInput == 999:
+    show_note_input = int(input("Show notes of student? [999 - quit]: "))
+    if show_note_input == 999:
         break
     else:
-        print(f'{listNotes[showNoteInput]}')
+        print(f"{list_notes[show_note_input]}")

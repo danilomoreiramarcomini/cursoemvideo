@@ -1,19 +1,19 @@
-numbersList = [[], []]
+numbers_list = [[], []]
 while True:
-    numberInput = int(input('Enter with a number:'))
-    choiceInput = int(input('Do you want continue? 1 Yes or 2 No:'))
-    if numberInput % 2 == 0:
-        numbersList[0].append(numberInput)
+    number_input = int(input("Enter with a number: "))
+    choice_input = int(input("Do you want continue? 1 Yes or 2 No: "))
+    if number_input % 2 == 0:
+        numbers_list[0].append(number_input)
     else:
-        numbersList[1].append(numberInput)
+        numbers_list[1].append(number_input)
 
-    if choiceInput != 1:
+    if choice_input != 1:
         break
-print('EVENS')
-numbersList[0].sort()
-for even in numbersList[0]:
-    print(f'{even}', end=' ')
-print('\nODDS')
-numbersList[1].sort()
-for odd in numbersList[1]:
-    print(f'{odd}', end=' ')
+print("EVENS")
+numbers_list[0].sort()
+for even in numbers_list[0]:
+    print(f"{even}", end=" ")
+print("\nODDS")
+numbers_list[1].sort()
+for odd in numbers_list[1]:
+    print(f"{odd}", end=" ")
