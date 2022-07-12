@@ -1,5 +1,5 @@
-first_term = int(input('Type the first term:'))
-reason = int(input('Type the reason:'))
+first_term = int(input("Type the first term: "))
+reason = int(input("Type the reason: "))
 term = first_term
 sequence = 1
 terms = 0
@@ -11,4 +11,4 @@ while new_term != 0:
         sequence += 1
         term += reason
 
-    new_term = int(input('Continue with amount terms:'))
+    new_term = int(input("Continue with amount terms: "))
