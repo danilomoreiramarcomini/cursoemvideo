@@ -5,5 +5,4 @@ def write(text):
     print(f"-" * support)
 
 
-text_input = str(input("Write your text here: ")).title()
-write(text_input)
+write(str(input("Write your text here: ")).title())
