@@ -7,6 +7,8 @@ def bigger(my_list):
 
 
 amount_values = int(input("How many numbers do you want to enter: "))
+while amount_values <= 0:
+    amount_values = int(input("How many numbers do you want to enter: "))
 
 new_list = list()
 
