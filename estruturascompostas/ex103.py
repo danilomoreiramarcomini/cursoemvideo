@@ -11,6 +11,4 @@ def token(player_name="player undefined", number_of_goals='0'):
     print(f"The {player_name} make {number_of_goals} goals")
 
 
-name_player_input = str(input("Player: "))
-numbers_of_goals_input = str(input("Number of goals: "))
-token(name_player_input, numbers_of_goals_input)
+token(str(input("Player: ")).title(), str(input("Number of goals: ")))
