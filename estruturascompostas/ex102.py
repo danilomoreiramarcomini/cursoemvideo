@@ -23,5 +23,4 @@ def factorial(parameter_factorial, show=False):
         print(support)
 
 
-factorial_input = int(input("Factorial: "))
-factorial(factorial_input, True)
+factorial(int(input("Factorial: ")), True)
