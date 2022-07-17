@@ -24,7 +24,6 @@ def vote(year_of_birth_user):
         print("Mandatory vote")
 
 
-year_of_birth_input = int(input("Year: "))
-vote(year_of_birth_input)
+vote(int(input("Year: ")))
 
 
